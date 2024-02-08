@@ -1,0 +1,62 @@
+<!---------->
+<!--학번: 202012164-->
+<!--이름: 이윤아-->
+<!--과제명: hw7_1.html-->
+<!----------> 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+    <title>jQuery</title>
+    <link rel = "stylesheet" href = "http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src = "http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src = "http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+      .ui-icon-my-icon:after {
+        background: url(buttonicon1.png) 80% 80% no-repeat;
+        background-size: 18px 18px;
+        background-color: lightgrey;
+      } /*사용자 정의 아이콘 생성*/
+    </style>
+  </head>
+  <body>
+    <div data-role = "page" id = "page1">
+      <div data-role = "header">
+        <h1>첫번째 페이지</h1>
+        <a href ="#page2" class = "ui-btn-right">다음</a>
+      </div>
+      <div data-role = "content">
+        <a href="#" data-role = "button" data-inline="true">버튼1</a>
+        <button data-icon = "my-icon">버튼2</button><!--사용자 정의 아이콘 사용-->
+        <input type="button" value="버튼3" data-icon="search" data-iconpos="right">
+      </div> 
+      <div data-role = "footer" class = "ui-bar" data-position = "fixed">
+        <div data-role="controlgroup" data-type="horizontal">
+          <a href = "#">버튼4</a>
+          <a href = "#">버튼5</a>
+        </div>  
+      </div>  
+    </div>
+    <div data-role = "page" id = "page2" data-add-back-btn = "true" data-back-btn-text = "이전">
+      <div data-role = "header">
+        <h1>두번째 페이지</h1>
+      </div>
+      <div data-role = "content">
+        <ul data-role ="listview" data-inset="true">
+          <li>박물관 종류</li>
+          <li><a href="#">자연사박물관</a></li>
+          <li><a href="#">공룡박물관<span class="ui-li-count">5</span></a></li>
+        </ul>
+      </div>
+      <div data-role = "footer" data-position = "fixed">
+        <div data-role = "navbar">
+          <ul>
+            <li><a href = "#" data-icon = "plus">추가</a></li>
+            <li><a href = "#" data-icon = "minus">삭제</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

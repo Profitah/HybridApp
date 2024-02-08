@@ -1,0 +1,32 @@
+<!---------->
+<!--학번: 202012164-->
+<!--이름: 이윤아-->
+<!--과제명: hw10_2.html-->
+<!----------> 
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+        $(function() {
+                $('#btn1').click(function() {                       /* btn1을 클릭(click)했을 때 p의 태그의 배경을 yellow로 변경*/
+                    $('p').css("background-color", "yellow");
+                });
+        
+                $("#btn2").dblclick(function() {                    /*btn2 더블 클릭(dblclick)했을 때 p의 태그 배경을 purple로 변경*/
+
+                    $('p').css("background-color", "purple");
+                })
+            })
+          </script>
+</head>
+<body>
+    <button id="btn1">click</button> 
+    <button id="btn2">dblclick</button>
+    <p>내용</p>
+ </body>
+
+</html>

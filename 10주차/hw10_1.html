@@ -1,0 +1,33 @@
+<!---------->
+<!--학번: 202012164-->
+<!--이름: 이윤아-->
+<!--과제명: hw10_1.html-->
+<!----------> 
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <ul id="m">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+       </ul>
+        <ul id="n">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+       </ul>
+</body>
+<script>
+$(document).ready(function() {          
+  $("#m li").each(function(index) {                     /* 아이디가 m인 li 요소들을 각각 가져옴.  */
+    $(this).text("리스트" + (index + 1));                 /* 리스트+ (index + 1)로 li의 내용을 대체하고 반환함*/
+  });
+});
+  </script>
+</html>

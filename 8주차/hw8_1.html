@@ -1,0 +1,63 @@
+<!---------->
+<!--학번: 202012164-->
+<!--이름: 이윤아-->
+<!--과제명: hw8_1.html-->
+<!----------> 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>header 영역</title>
+    <style>
+      ul{
+   list-style:none;
+   margin: 10px;
+   }
+   [data-role="controlgroup"] {
+
+    width: 128%;
+
+}
+    </style>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+  <div data-role = "header" data-position="fixed">
+  <h1>header 영역</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="return" id="txt1">
+    <input type="search" name="input6" id="input6" placeholder="키워드를 입력하세요">
+    <div data-role="fieldcontain">
+    <input type="range" name="score" id="score1" value="50" min="0"max="100"/>
+    <div data-role="fieldcontain">
+      <select name="gender" id="gender1" data-role="slider">
+        <option value="male">남자</option>
+        <option value="female">여자</option>
+      </select>
+    </div>
+  <div data-role="fieldcontain">
+    <fieldset data-role="controlgroup">
+     <li><legend>연락매체</legend></li>
+       <li> <input type="checkbox" name="type1" id="type1" value="1"/></li>
+        <li><label for="type1">e-mail</label></li>
+       <li><input type="checkbox" name="type2" id="type2" value="2" checked="checked"/></li>
+        <li><label for="type2">phone</label></li>
+    </fieldset>
+  </div>
+  <div data-role="fieldcontain">
+  <select name="age1" id="age1" data-native-menu="false" multiple="multiple">
+  <option value=" " data-placeholder="true">복수선택하세요</option>
+  <option value="num1">인터넷</option>
+  <option value="num2">방송</option>
+  </select>
+   </div>
+    </div>
+<div data-role = "footer"  data-position="fixed">
+<h1>footer 영역</h1>
+</div>
+</div>
+</body>
+</html>

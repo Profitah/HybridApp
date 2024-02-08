@@ -1,0 +1,39 @@
+<!---------->
+<!--학번: 202012164-->
+<!--이름: 이윤아-->
+<!--과제명: hw9_2.html-->
+<!----------> 
+<!DOCTYPE html>
+\<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+          $(document).ready(function() {
+            $(document).ready(function() {
+            $('a[title]').css('background-color', 'yellow');
+            $('a[href="http://www.nate.com"]').css('background-color', 'pink');
+            $('a[href^="mailto"]').css('background-color', 'aqua');
+            $('a[href$="net"]').css('background-color', 'purple');
+            $('a[href*="google"]').css('background-color', 'orange');
+        });
+        });
+    </script>
+    <title>202012164_hw9_2.html</title>
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+    <ul data-role="listview">
+        <li>
+            <a href="http://www.naver.com" title="네이버 이동">네이버</a>
+        </li>
+        <li><a href="mailto:ciycc@naver.com">관리자에게</a></li>
+        <li><a href="http://www.nate.com">네이트</a></li>
+        <li><a href="http://www.daum.net">다음</a></li>
+        <li><a href="http://www.google.com">구글</a></li>
+    </ul>
+</body>
+</html>
